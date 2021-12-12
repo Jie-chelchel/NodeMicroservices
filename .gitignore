@@ -4,7 +4,7 @@
 posts/node_modules
 client/node_modules
 comments/node_modules
-
+events/node_modules
 
 /.pnp
 .pnp.js

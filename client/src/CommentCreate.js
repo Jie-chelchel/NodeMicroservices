@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import CommentList from "./CommentList";
 
 function ContentCreate({ postId }) {
   const [content, setContent] = useState("");
@@ -25,7 +24,6 @@ function ContentCreate({ postId }) {
           />
         </div>
         <button className="btn btn-primary">Submit</button>
-        <CommentList />
       </form>
     </div>
   );
