@@ -25,7 +25,6 @@ const handleEvent = (type, data) => {
     const comment = post.comments.find((comment) => {
       return comment.id === id;
     });
-    console.log(comment);
     comment.status = status;
     comment.content = content;
   }
@@ -46,7 +45,6 @@ app.listen(4002, async () => {
 
   const res = await axios.get("http://localhost:4005/events");
   for (let event of res.data) {
-    console.log("process event: ", event.type);
     handleEvent(event.type, event.data);
   }
 });
